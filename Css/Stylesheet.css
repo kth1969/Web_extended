@@ -1,0 +1,102 @@
+:root{
+    --light-color:#F7F3F2;
+    --primary-color:#b90415;
+    --primary-color-hover:#d3071b;
+    --secondary-color:#103063;
+    --secondary-color-hover:#143f85;
+    --grey: #333;  
+    --dark: #252529;
+    --light:#fff;
+    --red: #EF7D6A;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8);
+
+}
+*{ box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body, html{
+    height: 100%;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: var(--grey);
+
+}
+ .pimg1, .pimg2, .pimg3{
+     position: relative;
+     opacity: 0.7;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+
+     /*   background-attachment: fixed = parallax */
+      /*   background-attachment: scroll = normal */
+     background-attachment: fixed;
+ }
+
+.pimg1{
+    background-image: url("../Img/Cinem4D_Cloth_KarinFischer.jpg");
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url("../Img/Fadenkreuz_KarinFischer.JPG") ;
+    min-height: 500px;
+}
+
+.pimg3{
+    background-image: url("../Img/WF_Maske_KarinFischer.jpg") ;
+    min-height: 600px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+
+}
+.section-light{
+    background-color: var(--light-color);
+    color:var(--grey);
+
+}
+.section-dark{
+    background-color: var(--dark);
+    color:var(--light-color);
+
+}
+
+.ptext{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align:center;
+    color:var(--dark);
+    font-size: 2rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+     
+}
+
+.ptext .border{
+    background-color:var(--dark);
+    color: var(--light-color);
+    padding:1rem;
+
+
+}
+.ptext .border.trans{
+    background-color: transparent;
+
+
+}
+
+@media(max-width: 568px){
+
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+
+}
