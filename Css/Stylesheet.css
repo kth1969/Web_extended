@@ -38,17 +38,18 @@ body, html{
  }
 
 .pimg1{
-    background-image: url("../Img/Cinem4D_Cloth_KarinFischer.jpg");
+    background-image: url("../Img/Moodboard.png");
     min-height: 100%;
+  
 }
 
 .pimg2{
-    background-image: url("../Img/Fadenkreuz_KarinFischer.JPG") ;
+    background-image: white ;
     min-height: 500px;
 }
 
 .pimg3{
-    background-image: url("../Img/WF_Maske_KarinFischer.jpg") ;
+    background-image: red ;
     min-height: 600px;
 }
 
