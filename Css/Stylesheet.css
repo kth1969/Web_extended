@@ -44,8 +44,8 @@ body, html{
 }
 
 .section{
-    text-align: center;
-    padding: 50px 80px;
+    text-align: left;
+    padding: 100px 80px;
 
 }
 .section-light{
@@ -78,11 +78,11 @@ body, html{
 
 
 }
-.ptext .border.trans{
-    //background-color: transparent;
+/* .ptext .border.trans{
+   background-color: transparent;
 
 
-}
+} */
 
 @media(max-width: 568px){
 
