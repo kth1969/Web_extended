@@ -44,7 +44,7 @@ body, html{
 }
 
 .pimg2{
-    background-image: white ;
+    background-image:url("../Img/Moodboard.png") ;
     min-height: 500px;
 }
 
