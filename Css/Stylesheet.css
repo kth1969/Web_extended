@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;700&display=swap');
+
 :root{
     --light-color:#F7F3F2;
     --primary-color:#b90415;
@@ -18,7 +21,7 @@
 body, html{
     height: 100%;
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Titillium Web, Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.8em;
