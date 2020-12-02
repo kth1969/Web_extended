@@ -101,8 +101,8 @@ body, html{
 .wrapper{
    
     display:grid;
-    grid-template-columns:repeat(9,1fr) ;
-    grid-template-rows:repeat(6,1fr);
+    grid-template-columns:repeat(10,1fr) ;
+    grid-template-rows:repeat(10,1fr);
     grid-gap:12px;
     /* grid-auto-flow: row-dense; */
 }
@@ -149,12 +149,7 @@ p:nth-of-type(5n){
     object-fit: cover;
    
 }
-.img-2{
-    grid-column: span 2;
-    grid-row: span 2;
-   object-fit: cover;
-   
-}
+
 /* .img-2{
     background: url(/Img/96_Moma.png);
     min-height: 200px;
