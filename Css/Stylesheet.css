@@ -90,6 +90,7 @@ section img{
 
 section img:nth-of-type(2n){
     grid-column: span 2;
+    margin-top: 10%;
     grid-row: span 2;
     width:115%;
    
@@ -99,19 +100,21 @@ section img:nth-of-type(2n){
 section img:nth-of-type(3n){
     grid-column: span 1;
     grid-row: span 2;
-    width:140%;
+    width:130%;
 }
 
 section img:nth-of-type(5n){
+
     grid-column: span 1;
     grid-row: span 2;
-    width:140%;
+    margin-top: 45%;
+    width:160%;
   
 }
 section img:nth-of-type(8n){
     grid-column: span 1;
-    grid-row: span 2;
-    width:140%;
+    grid-row: span 3;
+    width:180%;
     box-shadow: 0.2rem 0.2rem rgba(0, 0, 255, 0.534);
 }
 
