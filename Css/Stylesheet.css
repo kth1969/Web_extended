@@ -38,8 +38,10 @@ h2 {
 .text-rotate{
     transform-origin: left;
     transform: rotate(90deg);
+    text-align:center;
+    padding-top: 0.5rem;
     color: white;
-    background-color: rgba(194, 20, 136, 0.555);
+    background-color:rgba(0, 0, 255, 0.534);
 }
 
 .ptext{
@@ -49,7 +51,7 @@ h2 {
     color:var(--dark);
     font-size: 8rem;
     letter-spacing: 8px;
-    text-shadow:var(--shadowtext);
+    text-shadow:var(--shadow);
    
      
 }
@@ -110,7 +112,7 @@ section img:nth-of-type(8n){
     grid-column: span 1;
     grid-row: span 2;
     width:140%;
-    box-shadow: 0.2rem 0.2rem blue;
+    box-shadow: 0.2rem 0.2rem rgba(0, 0, 255, 0.534);
 }
 
 /* .space{
