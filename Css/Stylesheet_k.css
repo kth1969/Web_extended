@@ -98,14 +98,14 @@ body, html{
 /* Grid Layout Css Properties*/
 
 
-.wrapper{
+/* .wrapper{
    min-height: 100vh;
     display:grid;
     grid-template-columns:repeat(10,1fr) ;
     grid-template-rows:repeat(10,1fr);
     grid-gap:12px;
     /* grid-auto-flow: row-dense; */
-}
+/* }
 
 p{
     margin: 0;
@@ -148,7 +148,7 @@ p:nth-of-type(5n){
     grid-row: 1/2;
     object-fit: cover;
    
-}
+} */ 
 
 /* .img-2{
     background: url(/Img/96_Moma.png);
