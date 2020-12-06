@@ -81,6 +81,9 @@ section{
   
     grid-auto-flow: row-dense;
 }
+
+
+
 section img{
     width:100%;
     margin: 0 auto;
@@ -98,7 +101,6 @@ section img:nth-of-type(2n){
     width:115%;
    
 }
-
 
 section img:nth-of-type(3n){
     grid-column: span 1;

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/Stylesheet.css">
-   <script src="./JS/slider.js"></script>
+   <script src="./JS/main_js.js"></script>
+   <script type="text/javascript" src="./excel/data.json"></script>
     <title>gridlayout</title>
 </head>
 <body>
@@ -15,22 +16,34 @@
             </p>
                  <div id="theme-options-wrapper">
 
-                    <button onclick="myFunction()" class="theme-dot">1995</button>
-                     <button onclick="myFunction()"class="theme-dot">2001</button>
-                     <button onclick="myFunction()" class="theme-dot">2010</button>
-                     <button onclick="myFunction()" class="theme-dot">2015</button>
+                    <button onclick="first()" class="theme-dot">1995</button>
+                     <button onclick="second()"class="theme-dot">2001</button>
+                     <button onclick="third()" class="theme-dot">2010</button>
+                     <button onclick="forth()" class="theme-dot">2015</button>
                
   </div>
    <figure>
-  <label for="grayscale">change crowded to minimal</label>
-  <input id="grayscale" type="range" min="0" max="100" value="30"/>
+   <label for="grayscale">change crowded to minimal</label>
+ <input id="mySlider" type="range" min="1" max="5" value="1" step="1" onchange="resizeImage();">
 </figure>
 
-  <div id="myDIV">
+ 
+
+  <div id="first">
 <section>
- <h2 class="text-rotate">1996</h2>
-    <img class="ninety"src="/Img/96_migros.png" alt="">
-    <img class="ninety"src="/Img/95_sbb.png" alt="">
+ <h2 class="text-rotate">1995</h2>
+
+
+<div id="scale-wrapper">
+    <img src="/Img/95_sbb.png" alt="">
+    
+     </div>
+    <img src="/Img/96_migros.png" alt="">
+
+<img src="/Img/98_interdiscount.png" alt="">
+<img src="/Img/96_swiss_air.png" alt="">
+
+    
 <img src="/Img/97_Swatch.png" alt="">
 <img src="/Img/98_interdiscount.png" alt="">
 <img src="/Img/96_swiss_air.png" alt="">
@@ -56,10 +69,6 @@
 <img class="img"src="/Img/99_whitney.png" alt="">
 
 
-
-
-
-
 <img class="img"src="/Img/98_cola.png" alt="">
 <img class="img"src="/Img/99_britney.png" alt="">
 <img class="img"src="/Img/96_annabelle.png" alt="">
@@ -81,10 +90,15 @@
 <img class="img"src="/Img/98_google.png" alt="">
 <img class="img"src="/Img/99_annabelle.png" alt="">
 <img class="img"src="/Img/99_ibm.png" alt="">
+
+
 </section>
  </div>
- <section>
+  <div id="second">
+<section>
+
   <h2 class="text-rotate">2001</h2>
+
 <img class="img"src="/Img/2012_adobe.png" alt=""> 
 
 <img class="img"src="/Img//2012_Apple.png" alt="">
@@ -102,9 +116,10 @@
 
 </section>
  </div>
-    
+
+  
 </body>
- <script src="./JS/slider.js"></script>
+
 
  
 </html>

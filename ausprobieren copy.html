@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/Stylesheet_K.css">
+     <script>
+var width = $("#image").attr("width");
+var height = $("#image").attr("height");
+$("#ranger").change( function() {
+  $("#image").attr("width",width * (ranger.value / 1))
+  $("#image").attr("height",height * (ranger.value / 1) )
+});
+function setImage() {
+  var e = document.getElementById('mySelect');
+  document.getElementById('myImage').src = e.options[e.selectedIndex].value;
+}
+
+function resizeImage() {
+  var image = document.getElementById('img-wrapper'),
+      ranger = document.getElementById('mySlider');
+  image.style.width = 200*(mySlider.value / 1)+'px';
+}
+
+ </script>
+    <title>Minimal-Crowded</title>
+   
+  <div id="scale-wrapper">
+ 
+
+ <img id="image" src="./Img/2000_adobe.png"width="100 " height="200 "  >
+      <div class="slidecontainer">
+      <input id="ranger" type="range" min="1" max="5" value="1" step="1" class="slider" style="width: 500px"  >
+
+
+
+
+</head>
+<body>
+
+
+
+</body>
+</html>

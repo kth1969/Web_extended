@@ -4,20 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/Stylesheet_K.css">
-     <script src="./JS/slider.js"></script>
+     <script>function setImage() {
+  var e = document.getElementById('mySelect');
+  document.getElementById('myImage').src = e.options[e.selectedIndex].value;
+}
+
+function resizeImage() {
+  var image = document.getElementById('img-wrapper'),
+      ranger = document.getElementById('mySlider');
+  image.style.width = 100*(mySlider.value / 1)+'px';
+} </script>
     <title>Minimal-Crowded</title>
+   
+  
+ 
+
+</select>
+
+<input id="mySlider" type="range" min="1" max="5" value="1" step="1" onchange="resizeImage();" style="width:200px;">
+
+<div id="img-wrapper" style="width:200px; height:200px;">
+  <img src="./Img/2000_adobe.png" alt="My Image!" id="myImage" style="width:100%; height:1005;" />
+   <img src="./Img/2000_amazon.png" alt="My Image!" id="myImage" style="width:100%; height:1005;" />
+</div>
 </head>
 <body>
- <div id='controls'>  
-      <output id='scaleOutput'>1.0 </output>    
-      <input id='slider_value' type='range'    
-         min='1' max='5.0' step='0.01' value='1.0'/>  <!-- value is default slider value. Min and Max are slider range-->    
-   </div>  
 
 
-<div class="slider-images">
-<img id='mycanvas' class="image"src="./Img/2000_adobe.png" alt="">
-<img id='mycanvas'src="./Img/2000_adobe.png" alt="">
-</div>
+
 </body>
 </html>
