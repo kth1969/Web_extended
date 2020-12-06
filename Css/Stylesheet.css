@@ -76,7 +76,7 @@ section{
     margin-top: 5vh;
     display:grid;
     grid-template-columns:repeat(10,1fr) ;
-    grid-template-rows:repeat(7,1fr);
+    grid-template-rows:repeat(8,1fr);
     grid-gap:12px;
     transition: all 1s;
     grid-auto-flow: row-dense;
