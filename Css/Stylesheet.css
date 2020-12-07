@@ -18,6 +18,7 @@
 *{ box-sizing: border-box;
     margin:0;
     padding: 0;
+    transition: all 0.5s;
 }
 body, html{
     height: 100%;
@@ -80,6 +81,7 @@ section{
     grid-gap:12px;
     transition: all 1s;
     grid-auto-flow: row-dense;
+    
 }
 
 
@@ -90,6 +92,8 @@ section img{
     transition: all 1s;
     box-shadow: var(--shadow);
     justify-content: center;
+    transition: all 2s ease-in-out;
+
 
 }
 
@@ -99,6 +103,7 @@ section img:nth-of-type(2n){
     margin-top: 10%;
     grid-row: span 2;
     width:115%;
+    transition: all 2s ease-in-out;
    
     
      
@@ -207,14 +212,16 @@ font-size: 1.5rem;
     
     .theme-dot{
         height: 30px;
-        width: 80px;
+        width: 100px;
         border-radius: 5%;
         box-shadow: var(--shadow);
         border:2px solid var(--themeDotBorder);
         text-align: center;
         cursor:pointer;
-        margin:5px;
-        transition: all 1s;
+        margin:10px;
+        padding: 0.2rem;
+        font-size: .9rem;
+        transition: all 0.5s;
         background-color: #fff;
     }
     .theme-dot:hover{
@@ -226,4 +233,7 @@ font-size: 1.5rem;
     #settings-note{
         font-size: 1rem;
         text-align: center;
+    }
+    #first{
+        transition: all 2s ease-in-out;
     }

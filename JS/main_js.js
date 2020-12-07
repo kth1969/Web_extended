@@ -46,3 +46,14 @@ function resizeImage() {
   var image = document.getElementById('scale-wrapper'),
       ranger = document.getElementById('mySlider');
   image.style.width = 100*(mySlider.value / 1)+'px';}
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      // var myObj = JSON.parse(this.responseText);
+      // document.getElementById("demo").innerHTML = myObj.name;
+      console.log(xhttp.responseText);
+    }
+  };
+  xhttp.open("GET", "exampledata.json", true);
+  xhttp.send();
