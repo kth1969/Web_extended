@@ -10,7 +10,7 @@
     --grey: #333;  
     --dark: #252529;
     --light:#fff;
-    --red: #f84829;
+    --red: #f84829dc;
     --shadow: 0 1px 5px rgba(165, 161, 161, 0.63);
     --shadowtext: 0 2px 5px rgba(22, 53, 224, 0.8);
 
@@ -76,7 +76,7 @@ section{
     /* min-height: 100vh; */
     margin-top: 5vh;
     display:grid;
-    grid-template-columns:repeat(10,1fr) ;
+    grid-template-columns:repeat(7,1fr) ;
     grid-template-rows:repeat(8,1fr);
     grid-gap:12px;
     transition: all 1s;
