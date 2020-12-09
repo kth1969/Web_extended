@@ -1,3 +1,5 @@
+console.log("hello bauhaus");
+
 //Function for Buttons//
 
 function first() {
@@ -32,8 +34,15 @@ function third() {
     x.style.display = "none";
   }
 }
-
-
+function changeImage() {
+  var x = document.getElementById("changer");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    
+  } else {
+    x.style.display = "none";
+  }
+}
 
 
 // Scale images//
@@ -47,13 +56,20 @@ function resizeImage() {
       ranger = document.getElementById('mySlider');
   image.style.width = 100*(mySlider.value / 1)+'px';}
 
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      // var myObj = JSON.parse(this.responseText);
-      // document.getElementById("demo").innerHTML = myObj.name;
-      console.log(xhttp.responseText);
-    }
-  };
-  xhttp.open("GET", "exampledata.json", true);
-  xhttp.send();
+  // var xhttp = new XMLHttpRequest();
+  // xhttp.onreadystatechange = function() {
+  //   if (this.readyState == 4 && this.status == 200) {
+  //     // var myObj = JSON.parse(this.responseText);
+  //     // document.getElementById("demo").innerHTML = myObj.name;
+  //     console.log(xhttp.responseText);
+  //   }
+  // };
+  // xhttp.open("GET", "exampledata.json", true);
+  // xhttp.send();
+
+function toggle(it) {
+  if (it.width == 200)
+    {it.width = 600;}
+  else
+    {it.width = 200;}
+}

@@ -5,45 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/Stylesheet.css">
    <script src="./JS/main_js.js"></script>
-   <script type="text/javascript" src="./excel/data.json"></script>
+
     <title>gridlayout</title>
 </head>
 <body>
     <div class="wrapper">
        <a href="konzept.html">link zu Konzept</a>
+       <div class="sticky">
+        
+        <div id="theme-options-wrapper">
+      
+          <button onclick="first()"class="theme-dot">1995-2000</button>
+           <button onclick="second()"class="theme-dot">2001-2009</button>
+           <button onclick="third()" class="theme-dot">2010-2014</button>
+           <button onclick="forth()" class="theme-dot">2015-2020</button>
+          </div>
+     
+        
+      </div>
+    
             <p class="ptext">
             1995-2020
             </p>
-                 <div id="theme-options-wrapper">
-
-                    <button onclick="first()"class="theme-dot">1995-2000</button>
-                     <button onclick="second()"class="theme-dot">2001-2009</button>
-                     <button onclick="third()" class="theme-dot">2010-2014</button>
-                     <button onclick="forth()" class="theme-dot">2015-2020</button>
-               
-  </div>
+       
+          
    <figure>
    <label for="grayscale">scale the grid</label>
  <input id="mySlider" type="range" min="1" max="5" value="1" step="1" onchange="resizeImage();">
 </figure>
 
- 
+
 
   <div id="first">
+    <img class="thumbnail"src="./Img/2011_Apple.png" width="200" border="0" onclick="toggle(this)"> 
 <section>
  <h2 class="text-rotate">1995</h2>
 
+ <img class="thumbnail"src="./Img/2011_Apple.png" width="200" border="0" onclick="toggle(this)"> 
 
-
-    <img src="./Img/95_sbb.png" alt="">
+    <img src="./Img/95_sbb.png" alt=""id="changer" onclick="changeImage()">
     
    
-    <img src="./Img/96_migros.png" alt="">
+    <img class="myimg"src="./Img/96_migros.png" alt="">
 
-<img src="./Img/98_interdiscount.png" alt="">
+<img class="myimg" src="./Img/98_interdiscount.png" alt="">
 <img src="./Img/96_swiss_air.png" alt="">
 
-  
+
 <img src="./Img/97_Swatch.png" alt="">
  
 <img src="./Img/96_Logyx.png" alt="">
